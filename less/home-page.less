@@ -4,13 +4,10 @@
 
   .intro {
 
-    .main-header-pic {
-
       img {
         width: 100%;
         .border("", 5px)
       }
-    }
 
     h2 {
       padding: 15px;
@@ -33,6 +30,24 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .sky {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .launch {
+      @media @phone {
+        display: none;
+      }
+    }
+
+    .blast {
+      @media @phone {
+      width: 100%;
+      }
+    }
   }
 
   .visit-planets {
@@ -53,6 +68,10 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+
+    @media @phone {
+      .flex-center(column-reverse, "", "");
+    }
 
     .walk-text {
       width: 50%;
