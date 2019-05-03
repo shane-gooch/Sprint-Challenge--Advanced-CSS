@@ -6,3 +6,28 @@
     justify-content: @justify-content;
     align-items: @align-items;
 }
+
+.border(@border, @border-radius){
+    border: @border;
+    border-radius: @border-radius;
+}
+
+.main-btn(@background-color, @color, @border-radius){
+    background-color: @background-color;
+    color: @color;
+    border-radius: @border-radius;
+    padding: 10px 15px;
+    font-size: 1.30rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color:white;
+        color: black;
+        border: 1px solid black;
+    }
+
+    footer {
+        margin-bottom: 1.25%;
+    }
+}
+
