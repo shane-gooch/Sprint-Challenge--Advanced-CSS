@@ -311,6 +311,27 @@ footer {
   height: auto;
   border-radius: 10px;
 }
+.home .form-subscription {
+  margin: 40px 0px;
+  display: flex;
+  flex-direction: "";
+  justify-content: flex-start;
+  align-items: "";
+  border-radius: 10px;
+}
+.home .form-subscription .background-img {
+  width: 200px;
+  height: 275px;
+  box-shadow: 2px 2px 5px #888888;
+  transform: rotate(-15deg);
+}
+.home .form-subscription .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: "";
+  align-items: center;
+  margin-left: 150px;
+}
 .home footer {
   margin-bottom: 1.25%;
 }
