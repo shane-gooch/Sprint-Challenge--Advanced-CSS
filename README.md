@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites are more rigid than a responsive website. Adaptive websites use various layouts which are tailored for different devices such as mobile, tablet, or desktop as responsive websites have one layout which can seamlessly fit on any device. Adaptive layouts use fixed constraints to manage elements as responsive utilize % based layouts to adapt to any device. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first is the idea to built out a mobile version then work towards a desktop. In recent years, mobile used has overweighted laptops and as a developer, we should cater our products to the highest amount of users. By creating mobile-first it forces us to focus on content that matters to the most to our users while building a layout that will get more views than the desktop. After the mobile is created we can look to add more features in the desktop version. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+The normal browser text size is 16px and 62.5% of it is 10px. Since rem is based on the root HTML element you could easily calculate the px of rem by multiplying by 10. 1.6rem = 16px. 
+
 4. How would you describe preprocessing to someone new to CSS?
 
+A preprocessor is like a translator. It takes in data (words) and splits it out in a form another program (person) can understand. 
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept is the ability to have multiple LESS files link to one file that is being compiled. No more worrying about a thousand lines of CSS when each section is divided by purpose. Having multiple files in a two edge sword. The concept that gives me the most trouble is maintaining all the LESS files. Since everything is connected one wrong character could break the entire program and leads to hours of troubleshooting looking for the missing semi-colon. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,12 +60,12 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [] Create a forked copy of this project.
+- [] Add your project manager as collaborator on Github.
+- [] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
@@ -94,31 +104,31 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [x] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [x] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [x] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [x] Navigation Styles: Use the `navigation.less` file for styling.
 
-* [ ] Main Content Styles: Use the `home-page.less` file for styling
+* [x] Main Content Styles: Use the `home-page.less` file for styling
 
-* [ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+* [x] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
-* [ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+* [x] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
 
-* [ ]  Use at least 2 parameters to create your button
+* [x]  Use at least 2 parameters to create your button
 
-* [ ] Create a hover state that swaps the background color and font color of the base button styles.
+* [x] Create a hover state that swaps the background color and font color of the base button styles.
 
 ### Mobile Design
 
-* [ ] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
+* [x] Create a `@phone` variable that contains a `max-width: 500px` media query string. Use the `@phone` variable for all your nested mobile styling.
 
-* [ ] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
+* [x] [Review the provided home mobile design file](design-files/home-mobile.png). Match your mobile styling the best you can using the design file.
 
-* [ ] Push your changes and create a pull request if you haven't already.
+* [x] Push your changes and create a pull request if you haven't already.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 

@@ -2,12 +2,12 @@
 
 .home {
 
-  .intro {
+  img {
+    width: 100%;
+    .border("", 5px)
+  }
 
-      img {
-        width: 100%;
-        .border("", 5px)
-      }
+  .intro {
 
     h2 {
       padding: 15px;
@@ -65,16 +65,21 @@
   .walk {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 50px 15px;
     display: flex;
     justify-content: center;
 
     @media @phone {
       .flex-center(column-reverse, "", "");
+      padding: 15px;
     }
 
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -88,6 +93,11 @@
         .main-btn(black, white, 5px);
         width:30%;
         text-align: center;
+
+        @media @phone {
+          width: 100%;
+          padding: 5%;
+        }
       }
     }
 
@@ -95,6 +105,11 @@
       width: 46%;
       margin-left: 4%;
       
+      @media @phone {
+        width: 100%;
+        margin: 20px 15px 20px 0px;
+      }
+
       img {
         width: 100%;
         height: auto;
@@ -102,4 +117,8 @@
       }
     }
   }
+
+  footer {
+    margin-bottom: 1.25%;
+}
 }
