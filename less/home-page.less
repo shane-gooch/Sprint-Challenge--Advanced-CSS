@@ -29,25 +29,14 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
 
-    .sky {
       @media @phone {
-        display: none;
+        &:not(:first-child) {
+          display: none;
+        }
       }
     }
 
-    .launch {
-      @media @phone {
-        display: none;
-      }
-    }
-
-    .blast {
-      @media @phone {
-      width: 100%;
-      }
-    }
   }
 
   .visit-planets {
@@ -120,6 +109,7 @@
 
   .form-subscription {
     margin: 40px 0px;
+    background-color: @nav-bg;
     .flex-center("", flex-start, "");
     border-radius: 10px;
 
@@ -127,26 +117,40 @@
       width: 200px;
       height: 275px;
       box-shadow: 2px 2px 5px #888888;
-      transform: rotate(-15deg);
     }
 
     .text {
       .flex-center(column, "", center);
+      width: 50%;
       margin-left: 150px;
+
+      .subscrption-form {
+        width: 100%;
+        margin-top: 30px;
+
+        .subscrption {
+          .flex-center(column,"", center);
+
+          .text-box{
+            background-color:@nav-bg;
+            width: 45%;
+            padding: 1.25%;
+            border: none;
+            border-bottom: 2px solid black;
+
+            &:focus {
+              background-color:lighten(gray, 45)
+            }
+          }
+        }
+
+        .submit-btn {
+          .main-btn(black, white, 5px);
+            width:30%;
+            
+        }
+      }
     }
-
-    // .subscrption-form {
-    //   margin-top: 30px;
-    //   .flex-center("", center, "");
-    
-    // }
-
-    // .submit-btn {
-    //   .main-btn(black, white, 5px);
-    //     width:30%;
-    //     text-align: center;
-    //     margin-left: 
-    // }
   }
 
   footer {
